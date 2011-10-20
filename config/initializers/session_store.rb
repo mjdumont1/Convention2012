@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-Conference2012::Application.config.session_store :cookie_store, :key => '_Conference2012_session'
+SpringConference2012::Application.config.session_store :cookie_store, :key => '_SpringConference2012_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
-# (create the session table with "rails generate session_migration")
-# Conference2012::Application.config.session_store :active_record_store
+# (create the session table with "rake db:sessions:create")
+# SpringConference2012::Application.config.session_store :active_record_store

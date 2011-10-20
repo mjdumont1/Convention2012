@@ -1,14 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Conference2012</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+  <title>D42 Spring Convention || Take The Lead</title>
+	<%= csrf_meta_tag %>
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+    		.gradient {
+       			filter: none;
+    		}
+  	  </style>
+	<![endif]-->
+	<!--[if lt IE9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<~[endif]-->
+	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+	<%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+	<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+	<%= stylesheet_link_tag 'custom', :media => 'screen' %>
 </head>
-<body>
+<body class="twoColFixRtHdr">
+
+<div id="container">
+  <div id="header">
+
+   <%= link_to image_tag("Banner_Medium_w980.png", :alt => "D42 Spring Convention || Take The Lead"), root_path %>
+   
+    
+<!-- Drop-down menu -->
+    
+	<div id="nav">
+		<ul>
+			<li class="first"><%= link_to "Program", program_path, :class => "nav_links" %>
+				<ul>
+					<li><%= link_to "Schedule", schedule_path , :class => "nav_links" %></li>
+					<li><%= link_to "Keynote", keynote_path, :class => "nav_links" %></li>
+					<li><%= link_to "Educationals", educationals_path, :class => "nav_links" %></li>
+					<li><%= link_to "Speaker Bios", speaker_bios_path, :class => "nav_links" %></li>
+				</ul>
+			</li>
+			<li><%= link_to "Registration", registration_path, :class => "nav_links" %>
+				<ul>
+					<li><%= link_to "FAQ", faq_path, :class => "nav_links" %></li>
+					<li><%= link_to "Prizes", prizes_path, :class => "nav_links" %></li>
+					<li><%= link_to "Terms & Conditions", terms_conditions_path, :class => "nav_links" %></li>
+				</ul>
+			</li>
+			<li><%= link_to "Venue", venue_path, :class => "nav_links" %>
+				<ul>					
+					<li><%= link_to "About Calgary", about_calgary_path, :class => "nav_links" %></li>
+				</ul>
+			</li>
+			<li><%= link_to "Sponsors", sponsors_path, :class => "nav_links" %>
+				<ul>
+					<li><%= link_to "Our Sponsors", our_sponsors_path, :class => "nav_links" %></li>
+				</ul>
+			</li>
+			<li><%= link_to "Volunteers", volunteers_path, :class => "nav_links" %>
+				<ul>
+					<li><%= link_to "Application", application_path, :class => "nav_links" %></li>
+				</ul>
+			</li>
+			<li><%= link_to "About", about_path, :class => "nav_links" %>
+				<ul>
+					<li><%= link_to "Welcome Messages", welcome_message_path, :class => "nav_links" %></li>
+					<li><%= link_to "About TM", about_tm_path, :class => "nav_links" %></li>
+					<li><%= link_to "Planning Team", planning_team_path, :class => "nav_links" %></li>
+					<li><%= link_to "Contact Us", contact_us_path, :class => "nav_links" %></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+  <!-- end #header --></div>
+  <div id="sidebar1">
+    <%= link_to "Register", registration_path, :class => "registration_button round" %>
+    <br>
+   <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+       new TWTR.Widget({
+         version: 2,
+         type: 'profile',
+         rpp: 4,
+         interval: 30000,
+         width: 200,
+         height: 250,
+         theme: {
+           shell: {
+             background: '#004265',
+             color: '#ffffff'
+           },
+           tweets: {
+             background: '#f2df74',
+             color: '#000000',
+             links: '#fc3200'
+           }
+         },
+         features: {
+            scrollbar: true,
+            loop: false,
+            live: true,
+            behavior: 'all'
+         }
+      }).render().setUser('twitter').start();
+      </script>
+
+
+
+  <!-- end #sidebar1 --></div>
 
 <%= yield %>
+
+<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+  <div id="footer">
+	<div id="top_footer"><br><br></div>
+	<div id="mid_footer" class="round"><br><p>sponsors logos</p><br></div>
+   
+	<div id="bottom_footer">
+		<%= link_to "Home", root_path, :class => "footer_left" %><p class="footer_left"> | </p>
+		<%= link_to "Disclaimer", disclaimer_path, :class => "footer_left" %><p class="footer_left"> | </p>
+		<%= link_to "Contact Us", contact_us_path, :class => "footer_left" %>
+		<p class="footer_right">Design by Matthew Dumont</p>
+	</div>    
+
+    <br />
+  <!-- end #footer --></div>
+<%= debug(params) if Rails.env.development? %>
+<!-- end #container --></div>
 
 </body>
 </html>
