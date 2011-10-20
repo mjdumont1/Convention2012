@@ -145,7 +145,7 @@ a:visited {color:#FFFFFF;}
 	font-family: Veranda, Arial, Helvetica, sans-serif;
 } 
 .twoColFixRtHdr #footer { 
-	padding: 0 0px 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	padding: 0 0px 20px 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
 	background:#A9B2B1; 
 } 
 
@@ -166,6 +166,7 @@ a:visited {color:#FFFFFF;}
 	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
 	background:#A9B2B1; 
 	font-family: arial, sans-serif;
+
 }
 .twoColFixRtHdr #footer p {
 	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
