@@ -18,6 +18,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004165', end
 }
 p.mainpar {
 	font-size:11px;
+	font-family: arial, sans-serif;
 }
 
 a {
@@ -33,11 +34,13 @@ a {
 h1 {
 	color:#772432;
 	font-weight: bold;
+	font-family: arial, sans-serif;
 }
 
 h2 {
 	color:#004165;
 	font-weight: bold;
+	font-family: arial, sans-serif;
 }
 
 li.teamlist {
@@ -156,11 +159,13 @@ a:visited {color:#FFFFFF;}
 	background: #F2DF74;
 	text-align: center;
 	text-size: 14px; 
+	font-family: arial, sans-serif;
 }
 
 .twoColFixRtHdr #bottom_footer { 
 	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
 	background:#A9B2B1; 
+	font-family: arial, sans-serif;
 }
 .twoColFixRtHdr #footer p {
 	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
@@ -271,11 +276,13 @@ a.footer_left {
 	margin: 0;
 	padding: 10px 10px 10px 10px;
 	top: 20px;
+	font-weight: bold;
 }
 
 .footer_right {
 	float: right;
 	font-size: 12px;
+	font-weight: bold;
 }
 
 
