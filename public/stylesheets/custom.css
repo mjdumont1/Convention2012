@@ -204,10 +204,24 @@ a.registration_button {
 	text-align: center;
 	width: 180px;
 	color: #fff;
-	background: #CD202C;
+	/*background: #CD202C;*/
 	font-size: 150%;
 	font-weight: bold;
 	padding: 10px;
+
+	background-color: #CD202C;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 6px 6px 2px #999;
+	-webkit-box-shadow: 6px 6px 2px #999;
+	border: solid 1px #CCC;
+	/*font-size:14px;*/
+	/*color: #ffffff;*/
+	text-shadow: 3px 3px 6px #000000;
+}
+
+.registration_button:hover {
+	background-color: #772432;
 }
 
 
