@@ -212,7 +212,6 @@ a.registration_button {
 	background-color: #CD202C;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	behavior: url(border-radius.htc);
 	border-radius:	10px;
 
 
@@ -234,7 +233,6 @@ a.nav_links {
 	font-size: 16px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	behavior: url(border-radius.htc);
 	border-radius:	10px;
 }
 
@@ -279,7 +277,6 @@ nav ul li a:hover {
 .round {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	behavior: url(border-radius.htc);
 	border-radius:	10px;
 }
 
