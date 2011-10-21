@@ -214,7 +214,7 @@ a.registration_button {
 	-webkit-border-radius: 10px;
 	border-radius:	10px;
 	zoom: 1;
-	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=12);
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=9);
 
 
 
