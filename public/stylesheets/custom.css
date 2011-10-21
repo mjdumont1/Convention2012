@@ -213,6 +213,9 @@ a.registration_button {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius:	10px;
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=3);
+
 
 
 	-moz-box-shadow: 6px 6px 2px #999;
@@ -234,6 +237,8 @@ a.nav_links {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius:	10px;
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=3);
 }
 
 /* Navigation */
@@ -278,6 +283,8 @@ nav ul li a:hover {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius:	10px;
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=3);
 }
 
 /* Bottom Alignments */
