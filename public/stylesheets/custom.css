@@ -18,7 +18,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004165', end
 }
 p.mainpar {
 	font-size:11px;
-	font-family: arial, sans-serif;
+	font-family: calibri, sans-serif;
+}
+
+p.maintext {
+	font-size:16px;
+	font-family: calibri, sans-serif;
+	margin-left: 5px;
+}
+
+p.indent {
+	font-size:16px;
+	font-family: calibri, sans-serif;
+	margin-left: 30px;
 }
 
 a {
@@ -34,17 +46,20 @@ a {
 h1 {
 	color:#772432;
 	font-weight: bold;
-	font-family: arial, sans-serif;
+	font-family: cambria, sans-serif;
+	font-size: 24px;
+	margin-left: 5px;
+	text-align: left;
+	
 }
 
 h2 {
 	color:#004165;
 	font-weight: bold;
-	font-family: arial, sans-serif;
-}
-
-li.teamlist {
-	font-size:14px;
+	font-family: cambria, sans-serif;
+	font-size: 22px;
+	margin-left: 5px;
+	text-align: left;
 }
 
 /*a:hover {background-color:#FFF;}*/
@@ -306,4 +321,26 @@ a.footer_left {
 	font-weight: bold;
 }
 
+a.bodytext {
+	color: #0066CC;
+	text-decoration: none;
+	font-weight:100;
+	font-size:16px;
+	margin: 0px;
+	padding: 0;
+}
 
+table tr:nth-child(even) td {
+  background: transparent;
+}
+
+table {
+	margin-bottom:1.4em;
+	width:70%;
+	margin-left: 20px;
+}
+
+ul {
+	margin-left: 20px;
+	font-family: calibri, sans-serif;
+}
