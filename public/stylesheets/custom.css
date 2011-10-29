@@ -25,6 +25,7 @@ p.maintext {
 	font-size:16px;
 	font-family: calibri, sans-serif;
 	margin-left: 5px;
+	margin-right: 5px;
 }
 
 p.indent {
@@ -152,7 +153,7 @@ a:visited {color:#FFFFFF;}
 	width: 200px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
 	background: #A9B2B1; /* the background color will be displayed for the length of the content in the column, but no further */
 	padding: 15px 10px;
-    	margin: 15px 0 0 0;
+    	margin: 15px 0 0 0 ;
 }
 .twoColFixRtHdr #mainContent {
 	margin: 0 250px 0 0; /* the right margin on this div element creates the column down the right side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
@@ -334,15 +335,50 @@ table tr:nth-child(even) td {
   background: transparent;
 }
 
-table {
+table, td, th {
 	margin-bottom:1.4em;
-	width:70%;
 	margin-left: 20px;
 	font-family: calibri, sans-serif;
 	font-size: 16px;
+	border:1px solid black;
+	width: 600px;
 }
 
-ul {
+td {
+	height: 20px;
+}
+
+table.planning {
+	margin-bottom:1.4em;
+	margin-left: 20px;
+	border: none;
+}
+
+table.planning th {
+	margin-bottom:1.4em;
+	margin-left: 20px;
+	font-family: calibri, sans-serif;
+	border: none;
+
+}
+
+table.planning td {
+	height: 20px;
+	margin-bottom:1.4em;
+	margin-left: 20px;
+	font-family: calibri, sans-serif;
+	font-size: 16px;
+	border: none;
+}
+
+.cleaner {
+	height: 0;
+	clear: both;
+	}
+
+ul.mainlist {
 	margin-left: 20px;
 	font-family: calibri, sans-serif;
 }
+
+
