@@ -6,7 +6,7 @@ SpringConference2012::Application.routes.draw do
   get "pages/schedule"
   get "pages/sponsors"
   get "pages/contact_us"
-  get "pages/keynote"
+  get "pages/speakers"
   get "pages/registration"
   get "pages/educationals"
   get "pages/speaker_bios"
@@ -19,8 +19,6 @@ SpringConference2012::Application.routes.draw do
   get "pages/volunteers"
   get "pages/application"
   get "pages/about"
-  get "pages/welcome_message"
-  get "pages/about_tm"
   get "pages/planning_team"
   get "pages/disclaimer"
   
@@ -31,7 +29,7 @@ SpringConference2012::Application.routes.draw do
   match '/schedule', :to => 'pages#schedule'
   match '/program', :to => 'pages#program'
   match '/sponsors', :to => 'pages#sponsors'
-  match '/keynote', :to => 'pages#keynote'
+  match '/speakers', :to => 'pages#speakers'
   match '/registration', :to => 'pages#registration'
   match '/educationals', :to => 'pages#educationals'
   match '/speaker_bios', :to => 'pages#speaker_bios'
@@ -44,8 +42,6 @@ SpringConference2012::Application.routes.draw do
   match '/volunteers', :to => 'pages#volunteers'
   match '/application', :to => 'pages#application'
   match '/about', :to => 'pages#about'
-  match '/welcome_message', :to => 'pages#welcome_message'
-  match '/about_tm', :to => 'pages#about_tm'
   match '/planning_team', :to => 'pages#planning_team'
   match '/disclaimer', :to => 'pages#disclaimer'
 

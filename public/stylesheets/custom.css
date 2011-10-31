@@ -28,6 +28,13 @@ p.maintext {
 	margin-right: 5px;
 }
 
+p.addr {
+	font-size:16px;
+	font-family: calibri, sans-serif;
+	margin-left: 30px;
+	margin-right: 5px;
+}
+
 p.indent {
 	font-size:16px;
 	font-family: calibri, sans-serif;
