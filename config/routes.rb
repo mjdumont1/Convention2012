@@ -21,6 +21,7 @@ SpringConference2012::Application.routes.draw do
   get "pages/about"
   get "pages/planning_team"
   get "pages/disclaimer"
+  get "pages/testhome"
   
 
   root :to => "pages#home"
@@ -44,6 +45,7 @@ SpringConference2012::Application.routes.draw do
   match '/about', :to => 'pages#about'
   match '/planning_team', :to => 'pages#planning_team'
   match '/disclaimer', :to => 'pages#disclaimer'
+  match '/testhome', :to => 'pages#testhome'
 
 
   # The priority is based upon order of creation:
